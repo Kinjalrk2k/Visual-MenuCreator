@@ -19,7 +19,7 @@ void gotoxy(position pos)
 	SetConsoleCursorPosition(console,CursorPosition); // Sets position for next thing to be printed
 }
 
-int menu(position str_pos, char menu_items[260][260], int no_items, int gap=0)	//	the actual function
+int menu(position str_pos, char menu_items[][260], int no_items, int gap=0)	//	the actual function
 {
 	int ac_gap=gap+1;	//	actual gap provides the next line
 
@@ -115,8 +115,8 @@ int main()
 	str.x=0;
 	str.y=0;
 
-	char menu_items[260][260]={"Apples","Bananas","Grapes","Guava","Potato","Tomato","Ginger"};
 	int no_items=7;
+	char menu_items[no_items][260]={"Apples","Bananas","Grapes","Guava","Potato","Tomato","Ginger"};
 	int menu_id;
 	int gap=1;
 
