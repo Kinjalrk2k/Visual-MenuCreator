@@ -1,5 +1,5 @@
-#ifndef MENU_CREATOR
-#define MENU_CREATOR
+#ifndef MENU_CREATOR_H
+#define MENU_CREATOR_H
 #include<iostream>
 #include<conio.h>
 #include<windows.h>
@@ -9,8 +9,8 @@ using namespace std;
 HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 COORD CursorPosition;
 
-#ifndef GOTOXY
-#define GOTOXY
+#ifndef GOTOXY_POS
+#define GOTOXY_POS
 struct position	//	structure of position, used for specifing the cursor position
 {
 	int x,y;
